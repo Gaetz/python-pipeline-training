@@ -44,5 +44,4 @@ def create_folder_structure(folder_map):
    path = os.path.join(parent, subfolder)
    os.makedirs(path, exist_ok=True)
 
-print("blop")
 create_folder_structure(folder_structure)
