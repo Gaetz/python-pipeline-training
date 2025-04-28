@@ -42,7 +42,6 @@ def create_folder_structure(folder_map):
  for parent, subfolders in folder_map.items():
   for subfolder in subfolders:
    path = os.path.join(parent, subfolder)
-   print(path)
    os.makedirs(path, exist_ok=True)
 
 print("blop")
