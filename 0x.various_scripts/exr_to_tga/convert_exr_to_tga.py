@@ -17,7 +17,7 @@ def convert_exr_to_tga(exr_file, tga_file):
     try:
         # Construction de la commande oiiotool
         # La commande convertit l'image EXR en TGA avec une conversion de couleur de linéaire à sRGB
-        cmd = ['./OpenImageIO/oiiotool', exr_file, '-d', 'uint8', '--colorconvert', 'linear', 'sRGB', '-o', tga_file]
+        cmd = ['.\\OpenImageIO\\oiiotool.exe', exr_file, '-d', 'uint8', '--colorconvert', 'linear', 'sRGB', '-o', tga_file]
         print(f"Exécution de la commande: {' '.join(cmd)}")
         
         # Exécution de la commande
