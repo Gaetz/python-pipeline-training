@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     # Vérification que oiiotool est installé
     try:
-        subprocess.run(['oiiotool', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
+        subprocess.run(['.\\OpenImageIO\\oiiotool.exe', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
     except FileNotFoundError:
         print("Erreur: oiiotool (OpenImageIO) n'est pas installé ou n'est pas dans le PATH.")
         print("Veuillez l'installer: https://openimageio.readthedocs.io/en/latest/oiiotool.html")
